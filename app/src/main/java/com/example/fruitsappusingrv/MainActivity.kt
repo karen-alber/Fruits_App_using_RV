@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerview)
 
         val listOfCharacters = getListOfCharacters()
+
         val charactersAdapter =  CharacterAdapter(listOfCharacters)
         recyclerView.adapter = charactersAdapter
 
@@ -37,7 +38,4 @@ class MainActivity : AppCompatActivity() {
         return characters
     }
 
-    private fun getListOfCharacters(): List<Character> {
-
-    }
 }
