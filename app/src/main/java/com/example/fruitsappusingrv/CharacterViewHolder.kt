@@ -8,7 +8,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class CharacterViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
-    private val characterList: Any
     private val charName: TextView
     private val charImage: ImageView
 

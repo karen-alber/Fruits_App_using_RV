@@ -14,11 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerview)
 
+
         val listOfCharacters = getListOfCharacters()
 
-        val charactersAdapter =  CharacterAdapter(listOfCharacters)
+        val charactersAdapter = CharacterAdapter(listOfCharacters)
         recyclerView.adapter = charactersAdapter
+    }
 
+    private fun getListOfCharacters(): List<Character>{
         val characters = mutableListOf<Character>()
         characters.add(Character("Apple", R.drawable.apple, "Apple is one of the pome (fleshy) fruits. Apples at harvest vary widely in size, shape, colour, and acidity, but most are fairly round and some shade of red or yellow."))
         characters.add(Character("Banana", R.drawable.banana, "Bananas are variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe."))
