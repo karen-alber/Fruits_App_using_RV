@@ -27,7 +27,5 @@
         app:layout_constraintBottom_toBottomOf="@id/char_image"
         app:layout_constraintEnd_toEndOf="@id/char_image"
         app:layout_constraintStart_toStartOf="@id/char_image"
-        app:layout_height="wrap_content"
-        app:layout_width="0dp"
         tools:text="character name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
